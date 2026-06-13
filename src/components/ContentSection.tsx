@@ -14,7 +14,7 @@ const ContentSection = ({ section }: ContentSectionProps) => {
   return (
     <motion.section
       id={section.id}
-      initial={{ opacity: 0, y: 24 }}
+      initial={false}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-150px' }}
       transition={{ duration: 0.55 }}

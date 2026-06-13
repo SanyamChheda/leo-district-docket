@@ -1,3 +1,5 @@
+import { notFound } from 'next/navigation'
+import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import SectionNavigation from '@/components/SectionNavigation'
@@ -5,20 +7,20 @@ import ContentSection from '@/components/ContentSection'
 import TeamCard from '@/components/TeamCard'
 import ScrollToTopButton from '@/components/ScrollToTopButton'
 import { getDocketBySlug, getAllDockets } from '@/lib/docketUtils'
-import type { Metadata } from 'next'
 
 interface DocketPageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
-export const generateStaticParams = () => {
-  return getAllDockets().map((docket) => ({ slug: docket.slug }))
-}
+export const dynamicParams = false
 
-export const generateMetadata = ({ params }: DocketPageProps): Metadata => {
-  const docket = getDocketBySlug(params.slug)
+export const generateStaticParams = () => getAllDockets().map((docket) => ({ slug: docket.slug }))
+
+export const generateMetadata = async ({ params }: DocketPageProps): Promise<Metadata> => {
+  const { slug } = await params
+  const docket = getDocketBySlug(slug)
 
   if (!docket) {
     return {
@@ -32,20 +34,12 @@ export const generateMetadata = ({ params }: DocketPageProps): Metadata => {
   }
 }
 
-const DocketPage = ({ params }: DocketPageProps) => {
-  const docket = getDocketBySlug(params.slug)
+const DocketPage = async ({ params }: DocketPageProps) => {
+  const { slug } = await params
+  const docket = getDocketBySlug(slug)
 
   if (!docket) {
-    return (
-      <main className="min-h-screen bg-slate-50 px-6 py-24">
-        <Navbar />
-        <div className="mx-auto max-w-3xl rounded-[2rem] border border-white/15 bg-white p-10 text-center shadow-glass">
-          <h1 className="text-3xl font-semibold text-slate-950">Docket not found</h1>
-          <p className="mt-4 text-slate-600">The docket you are looking for does not exist or has not been added yet.</p>
-        </div>
-        <Footer />
-      </main>
-    )
+    notFound()
   }
 
   return (
@@ -85,9 +79,9 @@ const DocketPage = ({ params }: DocketPageProps) => {
               {(() => {
                 const specialChairDockets = ['get', 'gst', 'gmt', 'glt']
 
-                let primaryMembers = []
-                let jointAndCoordinators = []
-                let otherMembers = []
+                let primaryMembers: typeof docket.teamMembers = []
+                let jointAndCoordinators: typeof docket.teamMembers = []
+                let otherMembers: typeof docket.teamMembers = []
 
                 if (specialChairDockets.includes(docket.slug)) {
                   primaryMembers = docket.teamMembers.filter((member) => {

@@ -10,9 +10,33 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-wrap gap-4 text-slate-400">
-          <span>Twitter</span>
-          <span>Instagram</span>
-          <span>LinkedIn</span>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=leodistrict3231a2@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white"
+            aria-label="Email Leo District"
+          >
+            Email
+          </a>
+          <a
+            href="https://www.instagram.com/leodistrict3231a2?igsh=cTQwbGJ0ZHBjbXRw"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white"
+            aria-label="Instagram"
+          >
+            Instagram
+          </a>
+          <a
+            href="https://www.linkedin.com/company/leodistrict3231-a2/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white"
+            aria-label="LinkedIn"
+          >
+            LinkedIn
+          </a>
         </div>
 
         <p className="text-slate-500">Designed for District Docket · © {new Date().getFullYear()}</p>

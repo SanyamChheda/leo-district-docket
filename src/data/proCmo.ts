@@ -333,40 +333,22 @@ District Marketing Team will assist clubs in:
 
 **Content Writing**
 
-1. ChatGPT
-● Captions
-● Sponsorship letters
-● Press releases
-● LinkedIn posts
+1. **ChatGPT:** Captions, Sponsorship letters, Press releases, LinkedIn posts
 
-2. Google Gemini
-● Brainstorming campaigns
-● Event ideas
+2. **Google Gemini:** Brainstorming campaigns, Event ideas
 
-3. Claude AI
-● Long-form writing
-● Reports
-● Documentation`
+3. **Claude AI:** Long-form writing, Reports, Documentation`
     },
     {
       id: 'free-reel-editing-apps',
       heading: 'Free Reel Editing Apps',
       content: `**Free Reel Editing Apps**
 
-1. VN Editor
-● Event reels
-● Smooth editing
-● No watermark
+1. **VN Editor:** Event reels, Smooth editing, No watermark
 
-2. Canva
-● Story videos
-● Simple reels
-● Templates
+2. **Canva:** Story videos, Simple reels, Templates
 
-3. CapCut
-● Trending edits
-● Auto captions
-● Advanced effects`
+3. **CapCut:** Trending edits, Auto captions, Advanced effects`
     },
     {
       id: 'international-marketing-resources',

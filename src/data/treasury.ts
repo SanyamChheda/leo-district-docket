@@ -60,7 +60,7 @@ const treasury: DocketData = {
 2. **2. Multiple Dues:**
 
 - -Membership Dues: 75 rupees per member, (paid by the district from the dues received from the club)
-- -DP and VDP Dues: 2000 per officer.
+- -DP and VDP Dues: 1500 per officer.
 - -EC (Executive Council) Dues: 2250
 - -DC (District Chairperson) Dues: 1750`
     },
@@ -69,9 +69,9 @@ const treasury: DocketData = {
       heading: 'Procedure to make a Pan Card and Bank Account',
       content: `**1. Application of a PAN card**
 
-● Prepare the following documents and submit them to the District Treasury Team.
+● Prepare the following documents and submit them to the District Treasury Team. For any queries, contact Leo Abhishek Nayak - 9136616233
 
-● Also submit a fess of Rs.300/-.
+● Also submit a fees of Rs.300/-.
 
 ● The Authorized Signatory will have to be physically present to sign documents at the date and place coordinated by the District Treasury Team; after which the clubs part in the application for the PAN card process will be completed.
 
@@ -115,28 +115,30 @@ const treasury: DocketData = {
 
 **Documents Required (may change slightly with different banks)**
 
-➤ 1. PAN card (digital or physical)
+➤ PAN card (digital or physical)
 
-➤ 2. Resolution for opening Bank Account, presented and approved in a BOD meeting of the club. **[[format 4 - Click Here]](https://drive.google.com/file/d/1B_lN9KmEgaFdBLzsWdfEDZO9sTm3_K8n/view?usp=drivesdk)**
+➤ Resolution for opening Bank Account, presented and approved in a BOD meeting of the club. **[[format 4 - Click Here]](https://drive.google.com/file/d/1B_lN9KmEgaFdBLzsWdfEDZO9sTm3_K8n/view?usp=drivesdk)**
 
-➤ 3. By Laws - standard Leo club constitution.
+➤ By Laws - standard Leo club constitution.
 
-➤ 4. Charter Certificate of the club
+➤ Charter Certificate of the club
 
-➤ 5. KYC documents and Photograph (Passport size) of the Signatories of the club- President, Treasurer and Advisor (may change according to the requirements of the bank or the decisions of the club)
+➤ KYC documents and Photograph (Passport size) of the Signatories of the club- President, Treasurer and Advisor (may change according to the requirements of the bank or the decisions of the club)
 
-➤ 6. F. Address proof
+➤ Address proof
 
-➤ 7. No objection Letter (if the address provided is not in the said Leo Clubs name) by the legal owner of the premises, allowing the Leo Club to use the premises as the registered office of the Club. **[[format 3 - Click Here]](https://drive.google.com/file/d/1Jc9786HIc3ak1BS8Jtb_Cltr9x7U4TKp/view?usp=drivesdk)**
+➤ No objection Letter (if the address provided is not in the said Leo Clubs name) by the legal owner of the premises, allowing the Leo Club to use the premises as the registered office of the Club. **[[format 3 - Click Here]](https://drive.google.com/file/d/1Jc9786HIc3ak1BS8Jtb_Cltr9x7U4TKp/view?usp=drivesdk)**
 
-➤ 8. H. Opening Cheque or Cash.
+➤ Opening Cheque or Cash.
 
-➤ 9. Letter from the parent Lions club stating that a resolution for opening Bank Account for the Leo club sponsored by them, presented and **[[format 5 - Click Here]](https://drive.google.com/file/d/1piSWqRgwmaURVH-UR0MsiTj9XuPi2aVI/view?usp=drivesdk)**`
+➤ Letter from the parent Lions club stating that a resolution for opening Bank Account for the Leo club sponsored by them, presented and **[[format 5 - Click Here]](https://drive.google.com/file/d/1piSWqRgwmaURVH-UR0MsiTj9XuPi2aVI/view?usp=drivesdk)**`
     },
     {
       id: 'section-5-incomes-expenses',
-      heading: 'List of Incomes and Expenses – Service and Admin',
-      content: `Access the comprehensive budget tracking spreadsheet for Service and Admin accounts. This **[[shared spreadsheet - Click Here]](https://docs.google.com/spreadsheets/d/1Iuq_nqbO37JBW_xuN3Yl7WTmLDmXdESH/edit?usp=drivesdk&ouid=110129693913141378662&rtpof=true&sd=true)** contains detailed records of all income sources and expenses categorized by fund type, helping treasurers maintain accurate financial records and track budget allocation.`
+      heading: 'Resources Needed by a Treasurer',
+      content: `1. **List of expenses for Service and Admin accounts** - **[[Click Here to view]](https://docs.google.com/spreadsheets/d/1Iuq_nqbO37JBW_xuN3Yl7WTmLDmXdESH/edit?usp=drivesdk&ouid=110129693913141378662&rtpof=true&sd=true)**
+
+2. **Example Balance Sheet of Service and Admin Account** - **[[Click Here to view]](https://docs.google.com/document/d/1BLSqgomF6j9gh9bxGY06dMcDpq5PSjtoUsuio9Mmn6Y/edit?usp=sharing)**`
     }
   ],
   teamMembers: [
